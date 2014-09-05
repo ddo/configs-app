@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>TESTING 0.0.2</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h3 class="text-center featurette-heading">Show Given/Taken Damage after Death</h3>
+                <p class="text-center"><button id='show_dmg' class="btn btn-primary">Set</button></p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h3 class="text-center featurette-heading">Auto Buy [F1] Sort by Priority</h3>
+                <div id='weapons' class="text-center">
+                    <p><select class='weapons'>
+                        <optgroup label='Pistols'>
+                            <option>glock</option>
+                            <option>hkp2000</option>
+                            <option>elite</option>
+                            <option>p250</option>
+                            <option>tec9</option>
+                            <option>fn57</option>
+                            <option>deagle</option>
+                        </optgroup>
+                        <optgroup label="Heavy">
+                            <option>nova</option>
+                            <option>xm1014</option>
+                            <option>sawedoff</option>
+                            <option>mag7</option>
+                            <option>m249</option>
+                            <option>negev</option>
+                        </optgroup>
+                        <optgroup label="SMGs">
+                            <option>mac10</option>
+                            <option>mp9</option>
+                            <option>mp7</option>
+                            <option>ump45</option>
+                            <option>p90</option>
+                            <option>bizon</option>
+                        </optgroup>
+                        <optgroup label="Rifles">
+                            <option>galilar</option>
+                            <option>famas</option>
+                            <option selected>ak47</option>
+                            <option>m4a1</option>
+                            <option>ssg08</option>
+                            <option>sg556</option>
+                            <option>aug</option>
+                            <option>awp</option>
+                            <option>g3sg1</option>
+                            <option>scar20</option>
+                        </optgroup>
+                        <optgroup label="Gear">
+                            <option>vest</option>
+                            <option>vesthelm</option>
+                            <option>Taser</option>
+                            <option>defuser</option>
+                            <option>molotov</option>
+                            <option>incgrenade</option>
+                            <option>decoy</option>
+                            <option>flashbang</option>
+                            <option>hegrenade</option>
+                            <option>smokegrenade</option>
+                        </optgroup>
+                    </select></p>
+                    <p><select class='weapons'>
+                        <optgroup label='Pistols'>
+                            <option>glock</option>
+                            <option>hkp2000</option>
+                            <option>elite</option>
+                            <option>p250</option>
+                            <option>tec9</option>
+                            <option>fn57</option>
+                            <option>deagle</option>
+                        </optgroup>
+                        <optgroup label="Heavy">
+                            <option>nova</option>
+                            <option>xm1014</option>
+                            <option>sawedoff</option>
+                            <option>mag7</option>
+                            <option>m249</option>
+                            <option>negev</option>
+                        </optgroup>
+                        <optgroup label="SMGs">
+                            <option>mac10</option>
+                            <option>mp9</option>
+                            <option>mp7</option>
+                            <option>ump45</option>
+                            <option>p90</option>
+                            <option>bizon</option>
+                        </optgroup>
+                        <optgroup label="Rifles">
+                            <option>galilar</option>
+                            <option>famas</option>
+                            <option>ak47</option>
+                            <option selected>m4a1</option>
+                            <option>ssg08</option>
+                            <option>sg556</option>
+                            <option>aug</option>
+                            <option>awp</option>
+                            <option>g3sg1</option>
+                            <option>scar20</option>
+                        </optgroup>
+                        <optgroup label="Gear">
+                            <option>vest</option>
+                            <option>vesthelm</option>
+                            <option>Taser</option>
+                            <option>defuser</option>
+                            <option>molotov</option>
+                            <option>incgrenade</option>
+                            <option>decoy</option>
+                            <option>flashbang</option>
+                            <option>hegrenade</option>
+                            <option>smokegrenade</option>
+                        </optgroup>
+                    </select></p>
+                    <p><select class='weapons'>
+                        <optgroup label='Pistols'>
+                            <option>glock</option>
+                            <option>hkp2000</option>
+                            <option>elite</option>
+                            <option>p250</option>
+                            <option>tec9</option>
+                            <option>fn57</option>
+                            <option>deagle</option>
+                        </optgroup>
+                        <optgroup label="Heavy">
+                            <option>nova</option>
+                            <option>xm1014</option>
+                            <option>sawedoff</option>
+                            <option>mag7</option>
+                            <option>m249</option>
+                            <option>negev</option>
+                        </optgroup>
+                        <optgroup label="SMGs">
+                            <option>mac10</option>
+                            <option>mp9</option>
+                            <option>mp7</option>
+                            <option>ump45</option>
+                            <option selected>p90</option>
+                            <option>bizon</option>
+                        </optgroup>
+                        <optgroup label="Rifles">
+                            <option>galilar</option>
+                            <option>famas</option>
+                            <option>ak47</option>
+                            <option>m4a1</option>
+                            <option>ssg08</option>
+                            <option>sg556</option>
+                            <option>aug</option>
+                            <option>awp</option>
+                            <option>g3sg1</option>
+                            <option>scar20</option>
+                        </optgroup>
+                        <optgroup label="Gear">
+                            <option>vest</option>
+                            <option>vesthelm</option>
+                            <option>Taser</option>
+                            <option>defuser</option>
+                            <option>molotov</option>
+                            <option>incgrenade</option>
+                            <option>decoy</option>
+                            <option>flashbang</option>
+                            <option>hegrenade</option>
+                            <option>smokegrenade</option>
+                        </optgroup>
+                    </select></p>
+                    <p><select class='weapons'>
+                        <optgroup label='Pistols'>
+                            <option>glock</option>
+                            <option>hkp2000</option>
+                            <option>elite</option>
+                            <option>p250</option>
+                            <option>tec9</option>
+                            <option>fn57</option>
+                            <option>deagle</option>
+                        </optgroup>
+                        <optgroup label="Heavy">
+                            <option>nova</option>
+                            <option>xm1014</option>
+                            <option>sawedoff</option>
+                            <option>mag7</option>
+                            <option>m249</option>
+                            <option>negev</option>
+                        </optgroup>
+                        <optgroup label="SMGs">
+                            <option>mac10</option>
+                            <option>mp9</option>
+                            <option>mp7</option>
+                            <option>ump45</option>
+                            <option>p90</option>
+                            <option>bizon</option>
+                        </optgroup>
+                        <optgroup label="Rifles">
+                            <option>galilar</option>
+                            <option>famas</option>
+                            <option>ak47</option>
+                            <option>m4a1</option>
+                            <option>ssg08</option>
+                            <option>sg556</option>
+                            <option>aug</option>
+                            <option>awp</option>
+                            <option>g3sg1</option>
+                            <option>scar20</option>
+                        </optgroup>
+                        <optgroup label="Gear">
+                            <option>vest</option>
+                            <option selected>vesthelm</option>
+                            <option>Taser</option>
+                            <option>defuser</option>
+                            <option>molotov</option>
+                            <option>incgrenade</option>
+                            <option>decoy</option>
+                            <option>flashbang</option>
+                            <option>hegrenade</option>
+                            <option>smokegrenade</option>
+                        </optgroup>
+                    </select></p>
+                    <p><select class='weapons'>
+                        <optgroup label='Pistols'>
+                            <option>glock</option>
+                            <option>hkp2000</option>
+                            <option>elite</option>
+                            <option>p250</option>
+                            <option>tec9</option>
+                            <option>fn57</option>
+                            <option>deagle</option>
+                        </optgroup>
+                        <optgroup label="Heavy">
+                            <option>nova</option>
+                            <option>xm1014</option>
+                            <option>sawedoff</option>
+                            <option>mag7</option>
+                            <option>m249</option>
+                            <option>negev</option>
+                        </optgroup>
+                        <optgroup label="SMGs">
+                            <option>mac10</option>
+                            <option>mp9</option>
+                            <option>mp7</option>
+                            <option>ump45</option>
+                            <option>p90</option>
+                            <option>bizon</option>
+                        </optgroup>
+                        <optgroup label="Rifles">
+                            <option>galilar</option>
+                            <option>famas</option>
+                            <option>ak47</option>
+                            <option>m4a1</option>
+                            <option>ssg08</option>
+                            <option>sg556</option>
+                            <option>aug</option>
+                            <option>awp</option>
+                            <option>g3sg1</option>
+                            <option>scar20</option>
+                        </optgroup>
+                        <optgroup label="Gear">
+                            <option>vest</option>
+                            <option>vesthelm</option>
+                            <option>Taser</option>
+                            <option selected>defuser</option>
+                            <option>molotov</option>
+                            <option>incgrenade</option>
+                            <option>decoy</option>
+                            <option>flashbang</option>
+                            <option>hegrenade</option>
+                            <option>smokegrenade</option>
+                        </optgroup>
+                    </select></p>
+                    <p><select class='weapons'>
+                        <optgroup label='Pistols'>
+                            <option>glock</option>
+                            <option>hkp2000</option>
+                            <option>elite</option>
+                            <option>p250</option>
+                            <option>tec9</option>
+                            <option>fn57</option>
+                            <option>deagle</option>
+                        </optgroup>
+                        <optgroup label="Heavy">
+                            <option>nova</option>
+                            <option>xm1014</option>
+                            <option>sawedoff</option>
+                            <option>mag7</option>
+                            <option>m249</option>
+                            <option>negev</option>
+                        </optgroup>
+                        <optgroup label="SMGs">
+                            <option>mac10</option>
+                            <option>mp9</option>
+                            <option>mp7</option>
+                            <option>ump45</option>
+                            <option>p90</option>
+                            <option>bizon</option>
+                        </optgroup>
+                        <optgroup label="Rifles">
+                            <option>galilar</option>
+                            <option>famas</option>
+                            <option>ak47</option>
+                            <option>m4a1</option>
+                            <option>ssg08</option>
+                            <option>sg556</option>
+                            <option>aug</option>
+                            <option>awp</option>
+                            <option>g3sg1</option>
+                            <option>scar20</option>
+                        </optgroup>
+                        <optgroup label="Gear">
+                            <option>vest</option>
+                            <option>vesthelm</option>
+                            <option>Taser</option>
+                            <option>defuser</option>
+                            <option>molotov</option>
+                            <option>incgrenade</option>
+                            <option>decoy</option>
+                            <option>flashbang</option>
+                            <option selected>hegrenade</option>
+                            <option>smokegrenade</option>
+                        </optgroup>
+                    </select></p>
+                    <p><select class='weapons'>
+                        <optgroup label='Pistols'>
+                            <option>glock</option>
+                            <option>hkp2000</option>
+                            <option>elite</option>
+                            <option>p250</option>
+                            <option>tec9</option>
+                            <option>fn57</option>
+                            <option>deagle</option>
+                        </optgroup>
+                        <optgroup label="Heavy">
+                            <option>nova</option>
+                            <option>xm1014</option>
+                            <option>sawedoff</option>
+                            <option>mag7</option>
+                            <option>m249</option>
+                            <option>negev</option>
+                        </optgroup>
+                        <optgroup label="SMGs">
+                            <option>mac10</option>
+                            <option>mp9</option>
+                            <option>mp7</option>
+                            <option>ump45</option>
+                            <option>p90</option>
+                            <option>bizon</option>
+                        </optgroup>
+                        <optgroup label="Rifles">
+                            <option>galilar</option>
+                            <option>famas</option>
+                            <option>ak47</option>
+                            <option>m4a1</option>
+                            <option>ssg08</option>
+                            <option>sg556</option>
+                            <option>aug</option>
+                            <option>awp</option>
+                            <option>g3sg1</option>
+                            <option>scar20</option>
+                        </optgroup>
+                        <optgroup label="Gear">
+                            <option>vest</option>
+                            <option>vesthelm</option>
+                            <option>Taser</option>
+                            <option>defuser</option>
+                            <option>molotov</option>
+                            <option>incgrenade</option>
+                            <option>decoy</option>
+                            <option selected>flashbang</option>
+                            <option>hegrenade</option>
+                            <option>smokegrenade</option>
+                        </optgroup>
+                    </select></p>
+                    <p><select class='weapons'>
+                        <optgroup label='Pistols'>
+                            <option>glock</option>
+                            <option>hkp2000</option>
+                            <option>elite</option>
+                            <option>p250</option>
+                            <option>tec9</option>
+                            <option>fn57</option>
+                            <option>deagle</option>
+                        </optgroup>
+                        <optgroup label="Heavy">
+                            <option>nova</option>
+                            <option>xm1014</option>
+                            <option>sawedoff</option>
+                            <option>mag7</option>
+                            <option>m249</option>
+                            <option>negev</option>
+                        </optgroup>
+                        <optgroup label="SMGs">
+                            <option>mac10</option>
+                            <option>mp9</option>
+                            <option>mp7</option>
+                            <option>ump45</option>
+                            <option>p90</option>
+                            <option>bizon</option>
+                        </optgroup>
+                        <optgroup label="Rifles">
+                            <option>galilar</option>
+                            <option>famas</option>
+                            <option>ak47</option>
+                            <option>m4a1</option>
+                            <option>ssg08</option>
+                            <option>sg556</option>
+                            <option>aug</option>
+                            <option>awp</option>
+                            <option>g3sg1</option>
+                            <option>scar20</option>
+                        </optgroup>
+                        <optgroup label="Gear">
+                            <option>vest</option>
+                            <option>vesthelm</option>
+                            <option>Taser</option>
+                            <option>defuser</option>
+                            <option>molotov</option>
+                            <option>incgrenade</option>
+                            <option>decoy</option>
+                            <option>flashbang</option>
+                            <option>hegrenade</option>
+                            <option selected>smokegrenade</option>
+                        </optgroup>
+                    </select></p>
+                </div>
+                <p class="text-center"><button class="btn btn-success" id='more'>More</button> <button class="btn btn-primary" id='autobuy'>Save</button></p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <p class="text-center"><button id='run' class="btn btn-danger">Launch CS:GO</button></p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a>
+            </p>
+            <p>&copy; 2014 Ddo</p>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    window.$ = window.jQuery = require('./js/jquery.min.js');
+
+    var ipc = require('ipc');
+
+    var btn_run        = document.getElementById('run');
+    var btn_show_dmg   = document.getElementById('show_dmg');
+    var btn_autobuy    = document.getElementById('autobuy');
+    var btn_more       = document.getElementById('more');
+    var select_weapons = document.getElementsByClassName('select_weapons');
+
+    //run
+    btn_run.addEventListener('click', function() {
+        ipc.send('run');
+    });
+    //run
+    
+    //show_dmg
+    ipc.on('show_dmg', function(err) {
+        if(err) {
+            return alert('Error');
+        }
+
+        alert('Done');
+
+        btn_show_dmg.innerText = 'Set';
+    });
+
+    btn_show_dmg.addEventListener('click', function() {
+        btn_show_dmg.innerText = '...';
+        ipc.send('show_dmg');
+    });
+    //show_dmg
+
+    //autobuy
+    ipc.on('autobuy', function(err) {
+        if(err) {
+            return alert('Error');
+        }
+
+        alert('Done');
+
+        btn_autobuy.innerText = 'Save';
+    });
+
+    btn_autobuy.addEventListener('click', function() {
+        btn_autobuy.innerText = '...';
+
+        var selects = document.getElementsByClassName("weapons");
+        var weapons = $.map(selects, function(select, i) {
+            return select.value;
+        });
+
+        ipc.send('autobuy', weapons);
+    });
+    //autobuy
+
+    //more
+    btn_more.addEventListener('click', function() {
+        $('#weapons').append("<p><select class='weapons'> <optgroup label='Pistols'> <option>glock</option> <option>hkp2000</option> <option>elite</option> <option>p250</option> <option>tec9</option> <option>fn57</option> <option>deagle</option> </optgroup> <optgroup label='Heavy'> <option>nova</option> <option>xm1014</option> <option>sawedoff</option> <option>mag7</option> <option>m249</option> <option>negev</option> </optgroup> <optgroup label='SMGs'> <option>mac10</option> <option>mp9</option> <option>mp7</option> <option>ump45</option> <option>p90</option> <option>bizon</option> </optgroup> <optgroup label='Rifles'> <option>galilar</option> <option>famas</option> <option>ak47</option> <option>m4a1</option> <option>ssg08</option> <option>sg556</option> <option>aug</option> <option>awp</option> <option>g3sg1</option> <option>scar20</option> </optgroup> <optgroup label='Gear'> <option>vest</option> <option>vesthelm</option> <option>Taser</option> <option>defuser</option> <option>molotov</option> <option>incgrenade</option> <option>decoy</option> <option>flashbang</option> <option>hegrenade</option> <option>smokegrenade</option> </optgroup> </select></p>"); 
+    });
+    //more
+
+    //checkDir
+    ipc.on('checkDir', function(exists) {
+        if(exists) {
+            return;
+        }
+
+        alert('No CS:GO folder found, Please show me your Steam folder');
+        ipc.send('dialog');
+    });
+
+    ipc.send('checkDir');
+    //checkDir
+
+</script>
+<script src="./js/bootstrap.min.js"></script>
